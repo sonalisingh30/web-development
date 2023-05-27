@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Simple Form</title>
+    <style>
+        .form
+        {
+            width: auto;
+            height: auto;
+            align-self: center;
+            padding: 2%;
+        }    
+        .input_type
+        {
+            width: 100%;
+            height: auto;
+            font-size: 20px;
+            padding: 2%;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 0.5px;
+            margin: 2%;
+            color: lightgray;
+            box-shadow: 2px 2px lightgray;
+            
+        }   
+        #mainContainer {
+            position: absolute;
+            left:35%;
+            top: 25%;
+            width: 30%;
+            height: auto;
+            background-color: white;
+            border-radius: 1%;
+            padding: 2%;
+            
+           
+        }
+        .button
+        {
+            width: 100%;
+            height: auto;
+            font-size: 20px;
+            padding: 2%;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 0.5px;
+            margin: 2%;
+            background-color:blueviolet;
+            color: white ;
+            box-shadow: 2px 2px lightgray;
+            
+
+        }
+        #tnc
+        {
+            font-size: 18px;
+            color: dimgray;
+            margin: 10px;
+        }
+        
+    </style>
+
+</head>
+
+
+
+<body bgcolor="#1e90ff" id="mainBody">
+    <div id='mainContainer'>
+        <h1 class="form">Registration</h1>
+        <form class="form">
+            <label for="name"></label>
+            <input type="text" class="input_type" id="name" name="name" value="Enter Your Name ">
+            <label for="Mail"></label>
+            <br>
+            <input type="text" class="input_type" id="Mail" name="Mail" value="Enter Your Mail ">
+            <br>
+            <label for="Password"></label>
+            <input type="text" class="input_type" id="Password" name="Password" value="Create Your Password ">
+            <br>
+            <label for="Cpassword"></label>
+            <input type="text" class="input_type" id="Cpassword" name="Cpassword" value="Confirm Your Name ">
+            <br>
+            <input type="checkbox" id="checkbox_1" name="checkbox_1">
+            <label for="checkbox_1" id = 'tnc'>I accept all the tearm & condition</label>
+            <br>
+            <input type="submit" class="button" id="Button" name="Button" value="Register Now">
+            <br>
+            <label for="already account"></label>
+            <label type="text" id="already_account" name="already account" value="already have an account ">already have an account </label>
+        </form>
+    </div>
+
+</body>
+
+</html>
