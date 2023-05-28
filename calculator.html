@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>calculator</title>
+    <style>
+        .input_type {
+            width: 100%;
+            height: 50%;
+            font-size: 25px;
+            border-radius: 6px;
+            border-style: solid;
+            border-width: 4px;
+            margin: 2%;
+            color: lightgray;
+            box-shadow: 2px 2px lightgray;
+            text-align: center;
+
+
+
+
+        }
+
+        #input_container {
+            width: 100%;
+            display: flex;
+
+        }
+
+        #maincontainer {
+            position: absolute;
+            left: 30%;
+            top: 25%;
+            width: 45%;
+            height: 50%;
+            background-color: white;
+            border-radius: 1%;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #topLabel {
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+
+        #innercontainer {
+            width: 100%;
+            height: auto;
+            padding: 2%;
+            margin: auto;
+            align-self: center;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+        }
+
+        #buttonContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .button {
+
+            flex: 1;
+            width: auto;
+            height: 10%;
+            font-size: 15px;
+            padding: 2%;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 0.5px;
+            margin: 2%;
+            background-color: white;
+            color: black;
+            box-shadow: 2px 2px lightgray;
+        }
+
+
+        #ans_container {
+            width: 100%;
+            height: auto;
+            font-size: 15px;
+            padding: 2%;
+            margin: 2%;
+            text-align: center;
+            align-self: center;
+
+
+        }
+    </style>
+
+</head>
+
+
+<body bgcolor="#1d6b4fc" id="mainbody">
+    <div id="maincontainer">
+        <h1 id="topLabel">Calculator</h1>
+        <div id="innercontainer">
+            <div id='input_container'>
+                <input type="text" class="input_type" id="Enter_No" name="name" value="Enter a Number">
+                <input type="text" class="input_type" id="Another_No" name="name" value="Enter another Number">
+            </div>
+            <br>
+            <div id="buttonContainer">
+                <button class="button" id="add_button" name="button" onclick=add()> +</button>
+                <button class="button" id="sub_button" name="button" onclick=sub()> - </button>
+                <button class="button" id="mutiply_button" name="button" onclick=multiply()> * </button>
+                <button class="button" id="division_button" name="button" onclick=division()> / </button>
+            </div>
+            <div id="ans_container">
+                <label id='view_ans'></label>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script>
+        let Enter_No_1 = document.getElementById('Enter_No');
+        let Enter_No_2 = document.getElementById('Another_No');
+        let add_button = document.getElementById('add_button');
+        let Sub_button = document.getElementById('sub_button');
+        let multiply_button = document.getElementById('multiply_button');
+        let division_button = document.getElementById('division_button');
+        let ans = document.getElementById('view_ans');
+        function add() {
+            let answer = parseInt(Enter_No_1.value) + parseInt(Enter_No_2.value);
+            document.getElementById('view_ans').innerHTML = answer;
+
+        }
+        function sub() {
+            let answer = parseInt(Enter_No_1.value) - parseInt(Enter_No_2.value);
+            document.getElementById('view_ans').innerHTML = answer;
+        }
+        function multiply() {
+            let answer = parseInt(Enter_No_1.value) * parseInt(Enter_No_2.value);
+            document.getElementById('view_ans').innerHTML = answer;
+        }
+        function division() {
+            let answer = parseInt(Enter_No_1.value) / parseInt(Enter_No_1.value);
+            document.getElementById('view_ans').innerHTML = answer;
+        }
+
+
+    </script>
+</body>
+
+</html>
