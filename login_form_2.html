@@ -9,34 +9,123 @@
             height: auto;
             align-self: center;
             padding: 2%;
+            text-align: center;
+            font-size: 50px;
+
+
+
+        }
+
+        #user_name {
+            width: auto;
+            height: auto;
+            align-self: flex-start;
+            padding: 2%;
+            text-align: start;
+        }
+
+        #password {
+            width: auto;
+            height: auto;
+            align-self: flex-start;
+            padding: 2%;
+            text-align: start;
+        }
+
+        .input_type {
+            width: 90%;
+            height: auto;
+            font-size: 20px;
+            padding: 1%;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 0.5px;
+            margin: 2%;
+            color: black;
+            box-shadow: 2px 2px lightgray;
+background-color: aliceblue;
         }
 
         #mainContainer {
             width: 50%;
+            height: auto;
             position: absolute;
             left: 25%;
-            top: 25%;
+            top: 10%;
+            padding: 2%;
+            background: white;
             border-radius: 2%;
-            background-color: white;
-            
+
+
+        }
+
+        #Remember {
+            font-size: 18px;
+            color: dimgray;
+            margin: 10px;
+            text-align: start;
+            padding: 1%;
+        }
+
+        .button {
+            width: 90%;
+            height: auto;
+            font-size: 20px;
+            padding: 2%;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 0.5px;
+            margin: 2%;
+            background-color: lightpink;
+            color: white;
+            box-shadow: 2px 2px lightgray;
+
+        }
+
+        #forgot_password {
+
+            width: 100%;
+            height: auto;
+            padding: 35%;
+            margin: 4%;
+            font-size: 18px;
+
+
+        }
+
+        #mainbody {
+            background-size: cover;
         }
     </style>
 </head>
+<script>
+    var userName = document.getElementById('user_name').value
+    var password = document.getElementById('password').value
+    function login() {
+        if (userName == "sonali" && Password == "sonali3011") {
+            alert("login success");
+        }
+        else {
+            alert("login failed");
+        }
+    }
+</script>
 
-<body background="background.jpg" id="mainbody">
-    <div id ='mainContainer'>
+<body background="abc.jpg" id="mainbody">
+    <div id='mainContainer'>
+
         <h1 class="form">
             Shadow Login Form
         </h1>
-        
-        <form class="form">
-            <h2>User Name</h2>
-            <input type="text" class="input_type" name="name" value="">
+
+        <form>
+            <h2 id="user_name">User Name</h2>
+            <input type="text" class="input_type" name="name" >
             <br>
-            <h2>
+            <h2 id="password">
                 Password
             </h2>
-            <input type="text" class="input_type" name="name" value="">
+            <input type="text" class="input_type" name="password" >
             <br>
             <input type="checkbox" id="checkbox_1" name="checkbox_1">
             <label for="checkbox_1" id='Remember'>Remember me?</label>
@@ -48,6 +137,7 @@
             </label>
         </form>
     </div>
+
 
 </body>
 
