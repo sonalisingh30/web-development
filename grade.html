@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>grade</title>
+    </head>
+    <body>
+        
+            <input type="text" id="marks" placeholder="marks">
+            <br>
+            <button onclick=calculategrade()>show grade</button>
+            <br>
+            <h3 id='gradeLabel'>
+                grade
+            </h3>
+        
+    </body>
+    <script>
+        function calculategrade() {
+        var marks = document.getElementById('marks').value;
+        var grade;
+        if (marks > 90)
+        {
+            grade = 'A';
+        }
+        else if (marks > 80 && marks < 90)
+        {
+            grade= 'B';
+
+        }
+        else
+        {
+            grade = 'C';
+        }
+        document.getElementById('gradeLabel').innerHTML = grade
+    }
+    </script>
+</html>
