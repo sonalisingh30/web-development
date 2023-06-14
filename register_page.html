@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>register page</title>
+    </head>
+    <style>
+        #mainContainer 
+        {
+            width: 60%;
+            height: 60%;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            box-shadow: 5px 5px antiquewhite;
+            flex-direction: column;
+            display: flex;
+
+        }
+        .input_type
+        {
+            width: 80%;
+            height: auto;
+            flex: 1;
+            padding: 2%;
+            margin: 2px;
+            text-align: center;
+            align-items: center;
+            background-color: beige;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: medium;
+            
+
+        }
+        #innerContainer
+        {
+            width: 80%;
+            height: auto;
+            
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+
+        }
+        #login
+        {
+            width: 40%;
+            height: auto;
+            background-color: darksalmon;
+            align-items: center;
+            margin: auto;
+            border-radius: 10px;
+            padding: 2%;
+        }
+
+    </style>
+    <body>
+        <div id="mainContainer">
+            <div id="innerContainer">
+            <input type="text" class="input_type" placeholder="User Name">
+            <br>
+            <input type="text" class="input_type" placeholder="Password">
+            <br>
+            <input type="text" class="input_type" placeholder="Confirm Password">
+            <br>
+            <button id="login" placeholder="Login"> Register              
+            </button>
+        </div>
+        </div>
+    </body>
+</html>
