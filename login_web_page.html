@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title> web page</title>
+</head>
+<style>
+    #mainContainer {
+        width: 50%;
+        height: 50%;
+        background-color: #EBEBEB;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        border-radius: 10px;
+        box-shadow: 10px 10px #E3E3E3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+    }
+
+    .input_text {
+        width: 80%;
+
+        flex: 1;
+        align-items: center;
+        justify-self: center;
+        margin: auto;
+        border-radius: 10px;
+        padding: 2%;
+        background-color: #F0DCDC;
+        font-size: medium;
+
+
+
+    }
+
+    #login {
+        width: 50%;
+        height: 5%;
+        flex: 1;
+        align-items: center;
+
+        padding: 2%;
+        text-align: center;
+        align-content: center;
+        border-radius: 10px;
+        font-size: medium;
+        background-color: #FF03FF;
+        margin: 2%;
+    }
+
+    #innerContainer {
+        width: 60%;
+        display: flex;
+        height: 50%;
+        flex-direction: column;
+
+        align-items: center;
+        margin: auto;
+    }
+    #mainBody
+    {
+        background :url('back.jpg');
+        
+    }
+
+</style>
+
+<body  id = 'mainBody' >
+
+    <div id="mainContainer">
+        <div id="innerContainer">
+            <input type="text" class="input_text" placeholder="User Name">
+            <br>
+            <input type="text" class="input_text" placeholder="Password">
+            <br>
+            <button id="login" >  Login</button>
+            <a href="register_page.html"> Register</a>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
