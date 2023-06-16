@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -102,9 +104,33 @@
             </h2>
             <div>
                 <div>
-                    
+                    <img src = '1.jpeg' id = 'imageview' />
                 </div>
 
                 
     </body>
+    <script>
+var count = 1;
+setInterval(change, 2000);
+function change() {
+    if(count>3)
+    {
+        count = 1;
+    }
+    if(count == 1)
+    {
+        document.getElementById('imageview').src = '1.jpg';
+    }
+    else if(count == 2)
+    {
+        document.getElementById('imageview').src = '2.jpg';
+    }
+    else if(count == 3)
+    {
+        document.getElementById('imageview').src = '3.jpg';
+    }
+    count+=1;
+
+}
+    </script>
 </html>
